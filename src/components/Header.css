@@ -1,0 +1,26 @@
+.input-container input[type=text]{
+    padding-left: 5vw;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
+}
+input[type=text]{
+    margin-top: 4rem;
+    width: 40vw;
+    height: 5vh;
+    color: #fff;
+    border-radius: 9999px;
+    background: var(--cor-padrao);
+    border: none;
+    outline: none;
+}
+.input-container svg{
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    margin-left: 2vw;
+    margin-top: 4rem;
+    color: #fff;
+}
