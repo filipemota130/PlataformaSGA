@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar_reduced from '../../components/Navbar-reduced/Navbar-reduced';
+import Nav_reduced  from '../../components/Navbar_reduced/Navbar_reduced';
 import Card from 'react-bootstrap/esm/Card';
 import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -10,7 +10,7 @@ export function Disciplina() {
     const name = 'Nome da Disciplina (NDD) - COMP666';
     const classification = 9.5;
     const tags = {
-        tipo: "obrigatoria",
+        tipo: "Obrigatoria",
         enfase: "Sistemas de Informação",
         curso: "CC"
     }
@@ -30,7 +30,7 @@ export function Disciplina() {
     ]
     return (
         <>
-            <Navbar_reduced></Navbar_reduced>
+            <Nav_reduced />
             <Container style={{ width: '100% !important' }} className='mt-5 text-white'>
                 <Card style={{ borderRadius: 20, backgroundColor: "#33464D" }}>
                     <Card.Img variant="top" src="src\assets\imagem.png" />
@@ -41,9 +41,9 @@ export function Disciplina() {
                             <div style={{ fontSize: 24 }}>&nbsp;&nbsp;{classification}/10</div>
                         </div>
                         <div className="my-3">
-                            <Badge bg={tags.tipo == "obrigatoria" ? "secondary" : "success"} className="mx-1">{tags.tipo}</Badge>
+                            <Badge bg={tags.tipo == "Obrigatoria" ? "warning" : "secondary"} className="mx-1">{tags.tipo}</Badge>
                             <Badge bg={tags.enfase == "Sistemas de Informação" ? "primary" : "danger"} className="mx-1">{tags.enfase}</Badge>
-                            <Badge bg={tags.curso == "CC" ? "success" : "danger"} className="mx-1">{tags.curso}</Badge>
+                            <Badge bg={tags.curso == "CC" ? "success" : "primary"} className="mx-1">{tags.curso}</Badge>
                         </div>
                         <Card.Body style={{ borderRadius: 20, backgroundColor: "#24323D" }}>
                             <Stack gap={3}>

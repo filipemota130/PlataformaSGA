@@ -5,10 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import Stack from 'react-bootstrap/Stack';
-import Badge from 'react-bootstrap/Badge';
 import ufalLogo from '../../assets/logoic.svg'
 
-export function nav_reduced() {
+export default function Navbar_reduced() {
     const [show, setShow] = useState(false);
     return (
         <>
@@ -26,20 +25,19 @@ export function nav_reduced() {
                         style={{ width: "300px", transition: ".4s" }}
                         fullscreen={true}
                     >
-                        <Modal.Header closeButton className="fundo2 text-white">
+                        <Modal.Header closeButton className="fundo1 text-white d-flex" style={{ border: 0, backgroundColor:"#1f67aa" }}>
                             <Modal.Title>
                                 Menu
                             </Modal.Title>
+                            <Button className='btn btn-dark' style={{ transform: "translateX(150%)" }} onClick={() => setShow(false)}>Fechar</Button>
                         </Modal.Header>
-                        <Modal.Body className='flex fundo2 text-white'>
-                            <Stack className='mb-3' gap={3}>
-                                <a>Home</a>
-                                <a>Disciplinas</a>
+                        <Modal.Body className='flex fundo1 text-white'>
+                            <Stack className='mb-3 fs-5' gap={3}>
+                                <a href='/' style={{ textDecoration: "none" }}>Inicio</a>
+                                <a href='/disciplina' style={{ textDecoration: "none" }} >Disciplinas</a>
                                 <a>Professores</a>
                                 <a>Sobre nós</a>
                             </Stack>
-                            <Button className='btn btn-dark' onClick={() => setShow(false)}>Close</Button>
-
                         </Modal.Body>
                     </Modal>
                     <div className='text-white me-5 mt-3 d-flex'>
@@ -48,7 +46,5 @@ export function nav_reduced() {
                 </Container>
             </Navbar>
         </>
-    );
+    )
 }
-
-export default nav_reduced;
