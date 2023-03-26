@@ -9,17 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-=======
-    "@popperjs/core": "^2.11.7",
->>>>>>> 0562751ad3bc9d45e9b91d167f72e6d6c8835db0
     "bootstrap": "^5.2.3",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.9.0",
-    "swiper": "^9.1.1"
+    "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.7",

@@ -33,5 +33,4 @@ a{
     max-width: 1000px;
     display: grid;
     grid-template-columns: 300px 1fr 1fr;
-    /* grid-template-rows: 1fr 20px; */
 }

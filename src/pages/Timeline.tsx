@@ -2,14 +2,16 @@ import './Timeline.css'
 import { Header } from "../components/Header"
 export function Timeline() {
   return (
-    <div>
+    <div className='central'>
       <main className="timeline">
         <div className="header-c">
           <Header/>
-          <div className="carousel">
           </div>
+          <div className="carousel">
         </div>
           <div className="cards">
+            <div className="card"></div>
+            <div className="card"></div>
             <div className="card"></div>
             <div className="card"></div>
             <div className="card"></div>
