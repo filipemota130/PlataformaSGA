@@ -1,4 +1,4 @@
-import ufalLogo from '../assets/logoic.svg'
+import ufalLogo from '../../assets/logoic.svg'
 import { House, UsersThree, Book, Table, Info, } from 'phosphor-react';
 import { NavLink } from 'react-router-dom';
 import './Sidebar.css'

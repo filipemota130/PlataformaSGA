@@ -36,9 +36,17 @@ a{
     grid-template-columns: 300px 1fr;
 }
 
-.content{
+.content{ /* LINHAS BRANCAS NOS CANTOS QUANDO CRIAMOS UM COMPONENTE OU TELA*/
     border-left: 1px solid #ebeef0;
     border-right: 1px solid #ebeef0;
+}
+
+.fundo1{
+    background-color: #24323D;
+}
+
+.fundo2{
+    background-color: #33464D;
 }
 
 .new-tweet-form{
