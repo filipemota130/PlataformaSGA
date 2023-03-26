@@ -10,7 +10,7 @@ export function Sidebar(){
         <img src={ufalLogo} className="logo" alt="Logo"/>
         <nav className="main-navegation">
           <NavLink to='/'> <House weight="fill"/>Home</NavLink>
-          <a href="/disciplina"><Book/>Disciplinas</a>
+          <a href="/disciplinas"><Book/>Disciplinas</a>
           <a href=""> <UsersThree/>Professores</a>
           <a href=""> <Table/>Grade</a>
           <a href=""> <Info/>Sobre nós</a>

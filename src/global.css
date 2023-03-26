@@ -70,7 +70,6 @@ a{
     border: 0;
     font-size: 1.25rem;
     font-weight: 500;
-    margin-top: 0.75rem;
     resize: none;
 }
 .new-tweet-form label textarea:focus{

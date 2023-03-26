@@ -4,9 +4,9 @@
 .input-container{
     display: flex;
     align-items: center;
-    margin-left: 7vw;
 }
-input[type=text]{
+
+.input[type=text]{
     margin-top: 4rem;
     width: 40vw;
     height: 5vh;
@@ -16,6 +16,7 @@ input[type=text]{
     border: none;
     outline: none;
 }
+
 .input-container svg{
     width: 1.2rem;
     height: 1.2rem;
