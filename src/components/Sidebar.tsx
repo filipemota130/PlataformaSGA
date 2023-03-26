@@ -14,10 +14,7 @@ export function Sidebar(){
           <a href=""> <UsersThree/>Professores</a>
           <a href=""> <Table/>Grade</a>
           <a href=""> <Info/>Sobre nós</a>
-        </nav>
-        <div className="warnings">
-          <button className="info-button" type="button">ler mais</button>
-        </div>        
+        </nav>       
       </aside>
     )
 }

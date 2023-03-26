@@ -4,7 +4,6 @@
 .input-container{
     display: flex;
     align-items: center;
-    margin-left: 7vw;
 }
 input[type=text]{
     margin-top: 4rem;

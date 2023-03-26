@@ -1,0 +1,12 @@
+
+.aside-right{
+    position: fixed;
+    top: 20%;
+    right: 1px;
+}
+.dale{
+    border-top-left-radius: 40px;
+    width: 25vw;
+    height: 80vh;
+    background: var(--cor-padrao);
+}
