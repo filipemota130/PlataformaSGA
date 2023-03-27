@@ -19,7 +19,6 @@ body{
 body, input, button, textarea{
     font: 400 1rem Roboto, sans-serif;
 }
-
 button{
     cursor: pointer;
 }
@@ -33,7 +32,7 @@ a{
     margin-left: 4rem;
     max-width: 1000px;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 300px 1fr 1fr;
 }
 
 .content{ /* LINHAS BRANCAS NOS CANTOS QUANDO CRIAMOS UM COMPONENTE OU TELA*/
