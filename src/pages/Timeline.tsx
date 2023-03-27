@@ -1,5 +1,5 @@
 import './Timeline.css'
-import { Header } from "../components/Header"
+import { Header } from "../components/Header/Header"
 export function Timeline() {
   return (
     <div className='central'>
@@ -10,12 +10,12 @@ export function Timeline() {
           <div className="carousel">
         </div>
           <div className="cards">
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
+            <div className="card1"></div>
+            <div className="card1"></div>
+            <div className="card1"></div>
+            <div className="card1"></div>
+            <div className="card1"></div>
+            <div className="card1"></div>
           </div>
       </main>
     </div>
