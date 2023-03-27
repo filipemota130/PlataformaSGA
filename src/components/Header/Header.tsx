@@ -6,7 +6,7 @@ export function Header(){
         <header>
             <div className="input-container">
                 <MagnifyingGlass/>
-                <input type="text" />
+                <input className='input' type="text" />
             </div>
         </header>
     )
