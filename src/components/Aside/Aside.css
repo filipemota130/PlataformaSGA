@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: space-evenly;
     color: #fff;
-    font-size: 1rem;
 }
 .notifications{
     background: var(--cor-padrao);

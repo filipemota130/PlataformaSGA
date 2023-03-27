@@ -1,6 +1,6 @@
 import './Timeline.css'
 import image3 from '../assets/carrossel/image3.jpg'
-import { Header } from "../components/Header"
+import { Header } from '../components/Header/Header';
 export function Timeline() {
   return (
     <div className='central'>
