@@ -5,7 +5,8 @@ import './Sidebar.css'
 // import { NavLink } from 'react-router-dom'
 
 export function Sidebar(){
-    return(
+  return (
+    <>
       <aside className="sidebar">
         <img src={ufalLogo} className="logo" alt="Logo"/>
         <nav className="main-navegation">
@@ -16,5 +17,7 @@ export function Sidebar(){
           <a href=""> <Info/>Sobre nós</a>
         </nav>       
       </aside>
+    </>
+      
     )
 }

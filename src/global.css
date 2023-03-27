@@ -29,10 +29,7 @@ a{
 /** Page: Timeline **/
 
 .layout{
-    margin-left: 4rem;
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 300px 1fr 1fr;
+    display: flex;
 }
 
 .fundo1{

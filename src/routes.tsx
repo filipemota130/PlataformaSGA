@@ -2,16 +2,16 @@ import { createBrowserRouter } from "react-router-dom";
 import { Default } from "./layouts/Default";
 import { Disciplina } from "./pages/Disciplina/Disciplina";
 import { DisciplinaList } from "./pages/DisciplinaList/DisciplinaList";
-import { Timeline } from "./pages/Timeline";
+import { Timeline } from "./pages/Timeline/Timeline";
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <Default/>,
+        element: <Default />,
         children: [
             {
                 path: '/',
-                element: <Timeline/>
+                element: <Timeline />
             },
         ]
     },
@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
     },
     {
         path: 'Disciplina',
-        element: <Disciplina/>,
+        element: <Disciplina />,
     }
-    
+
 ])

@@ -1,48 +1,42 @@
 import Carousel from 'react-bootstrap/Carousel';
-import image1 from '../../assets/carrossel/image1.jpg'
-import image2 from '../../assets/carrossel/image2.jpg'
-import image3 from '../../assets/carrossel/image3.jpg'
+import image1 from '/src/assets/imagem.png'
 
 function UncontrolledExample() {
+  const items = [
+    {
+      imagem: image1,
+      title: "Aaaaaaa",
+      desc:"asdhausjhdiasuhduiashd",
+    },
+    {
+      imagem: image1,
+      title: "BBBBBB",
+      desc: "cdcccdcdcdcdcdcdcd",
+    },
+    {
+      imagem: image1,
+      title: "CCCCCCC",
+      desc: "ahsydhasyuhdauysdhua",
+    },
+  ]
   return (
-    <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={image1}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={image2}
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={image3}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+    <Carousel className="rounded" style={{ width: "auto" }}>
+      {
+        items.map(item =>
+          <Carousel.Item style={{ width: "auto", maxHeight: "400px", padding: 0, margin: 0 }}>
+            <img
+              className="d-block w-100"
+              src={item.imagem}
+            />
+            <Carousel.Caption className='text-center'>
+              <div className='fs-2 text-center md-4'>{item.title}</div>
+              <p>
+                {item.desc}
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        )
+      }
     </Carousel>
   );
 }
