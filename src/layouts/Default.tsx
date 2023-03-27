@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import { Sidebar } from "../components/Sidebar";
-import { Aside } from "../components/Aside"
+import { Sidebar } from "../components/Sidebar/Sidebar";
+import { Aside } from "../components/Aside/Aside"
 export function Default(){
     return(
         <div className="layout">
