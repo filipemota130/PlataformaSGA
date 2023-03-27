@@ -1,6 +1,7 @@
 import './Timeline.css'
-import image3 from '../assets/carrossel/image3.jpg'
 import { Header } from '../components/Header/Header';
+import UncontrolledExample from '../components/Timeline/Carousel';
+import GroupExample from '../components/Timeline/cards';
 export function Timeline() {
   return (
     <div className='central'>
@@ -9,15 +10,10 @@ export function Timeline() {
           <Header/>
           </div>
           <div className="carousel">
-          <img src={image3} alt="" />
+          <UncontrolledExample/>
         </div>
           <div className="cards">
-            <div className="card-1"></div>
-            <div className="card-1"></div>
-            <div className="card-1"></div>
-            <div className="card-1"></div>
-            <div className="card-1"></div>
-            <div className="card-1"></div>
+          <GroupExample/>
           </div>
       </main>
     </div>

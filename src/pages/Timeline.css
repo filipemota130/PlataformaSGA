@@ -3,12 +3,12 @@
     flex-direction: column;
     align-items: center;
 }
-.carousel img{
+/* .carousel img{
     width: 40vw;
     height: 25vh;
     margin: 50px;
-}
-.cards{
+} */
+/* .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -21,7 +21,7 @@
     height: 250px;
     position: relative;
     border-radius: 40px;
-}
+} */
 .central{
     border-left: solid 1px #33464D;
 }
