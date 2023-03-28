@@ -4,6 +4,7 @@ import { Disciplina } from "./pages/Disciplina/Disciplina";
 import { DisciplinaList } from "./pages/DisciplinaList/DisciplinaList";
 import { Timeline } from "./pages/Timeline/Timeline";
 import { CadastroProf } from "./pages/CadastroProf/CadastroProf";
+import { DisciplinaForm } from "./pages/DisciplinaForm/DisciplinaForm"
 
 export const router = createBrowserRouter([
     {
@@ -28,5 +29,9 @@ export const router = createBrowserRouter([
         path: 'CadastroProf',
         element: <CadastroProf />,
     },
+    {
+        path: 'DisciplinaForm',
+        element: <DisciplinaForm />,
+    }
 
 ])
