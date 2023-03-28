@@ -13,7 +13,7 @@ const list = [
         name: "Ranilson Paiva",
         nota: 10,
         link: "professor",
-        disciplinas:["Redes","Programação web"]
+        disciplinas: ["Redes", "Programação web"]
 
     },
     {
@@ -46,10 +46,11 @@ export function ProfessorList() {
                         </div>
                     </div>
                     <Container style={{ width: 'auto', maxWidth: "100vw" }} className='mt-5 text-white '>
+                        <a href="CadastroProf"><Button className='mb-5'>Adicionar Professor</Button></a>
                         <ListGroup>
                             {
                                 list.map((professor) =>
-                                    <Card className='p-2 mb-4' style={{borderRadius: 15, backgroundColor: "#33464D", width:"auto"}}>
+                                    <Card className='p-2 mb-4' style={{ borderRadius: 15, backgroundColor: "#33464D", width: "auto" }}>
                                         <Card.Body className='d-flex'>
                                             <div className='mt-4'>
                                                 <img src="src\assets\rede-global.png" width="100" height="100" />

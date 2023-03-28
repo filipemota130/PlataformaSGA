@@ -40,6 +40,7 @@ export function DisciplinaList() {
                         </div>
                     </div>
                     <Container style={{ width: 'auto', maxWidth: "55rem" }} className='mt-5 text-white'>
+                        <a href="DisciplinaForm"><Button className='mb-5'>Adicionar Disciplina</Button></a>
                         <ListGroup>
                             {
                                 list.map((disciplina) =>
