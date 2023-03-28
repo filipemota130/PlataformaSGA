@@ -13,7 +13,7 @@ export function Sidebar(){
           <NavLink to='/'> <House weight="fill"/>Home</NavLink>
           <a href="/disciplinas"><Book/>Disciplinas</a>
           <a href="/professores"> <UsersThree/>Professores</a>
-          <a href=""> <Table/>Grade</a>
+          <a href="/Grade"> <Table/>Grade</a>
           <a href=""> <Info/>Sobre nós</a>
         </nav>       
       </aside>

@@ -7,6 +7,7 @@ import { Timeline } from "./pages/Timeline/Timeline";
 import { Login } from "./pages/Login/Login";
 import { CadastroProf } from "./pages/CadastroProf/CadastroProf";
 import { DisciplinaForm } from "./pages/DisciplinaForm/DisciplinaForm"
+import { Grade } from "./pages/Grade/Grade";
 
 export const router = createBrowserRouter([
     {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
     {
         path: 'DisciplinaForm',
         element: <DisciplinaForm />,
+    },
+    {
+        path: 'Grade',
+        element: <Grade/>,
     }
 
 ])

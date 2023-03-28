@@ -109,7 +109,7 @@ export function Timeline() {
                 </Card.Footer>
                 <Card.Footer className='border-0'>
                   <small className="text-white me-5">{item.prof}</small>
-                  <small className="text-white ms-5">{item.carga}hrs</small>
+                  <small className="text-white" style={{ marginLeft: "170px" }}>{item.carga}hrs</small>
                 </Card.Footer>
               </Card>
             )
@@ -135,7 +135,7 @@ export function Timeline() {
                 </Card.Footer>
                 <Card.Footer className='border-0'>
                   <small className="text-white me-5">{item.prof}</small>
-                  <small className="text-white ms-5">{item.carga}hrs</small>
+                  <small className="text-white" style={{ marginLeft: "170px" }}>{item.carga}hrs</small>
                 </Card.Footer>
               </Card>
             )
