@@ -36,6 +36,7 @@ export default function Navbar_reduced() {
                                 <a href='/' style={{ textDecoration: "none" }}>Inicio</a>
                                 <a href='/disciplinas' style={{ textDecoration: "none" }} >Disciplinas</a>
                                 <a href='/professores' style={{ textDecoration: "none" }}>Professores</a>
+                                <a href='/grade' style={{ textDecoration: "none" }}>Simulador de Grade</a>
                             </Stack>
                         </Modal.Body>
                     </Modal>

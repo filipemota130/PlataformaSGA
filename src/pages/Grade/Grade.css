@@ -1,0 +1,3 @@
+.react-bootstrap-table td[data-row-selection] {
+width: 40px !important;
+}
