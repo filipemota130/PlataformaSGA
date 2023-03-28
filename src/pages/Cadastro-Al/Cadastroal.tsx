@@ -13,7 +13,7 @@ export function Cadastro(){
             <div className='d-flex justify-content-center mx-5 mt-5' style={{ width: '90%' }}>
             <div className='d-flex justify-content-center mx-5' style={{ width: '60%' }}>
                 <form action='' style={{ width: '100%' }}>
-                    <label className='text-white mt-3'>Nome de usuário* : </label>
+                            <label className='text-white my-3'>Nome de usuário<b style={{ color: "#a90c0c" }}>*</b> : </label>
                     <div style={{ width: 'auto' }}>
                         <InputGroup className="mb-3" >
                             <Form.Control
@@ -27,7 +27,7 @@ export function Cadastro(){
                         </InputGroup>
                     </div>
 
-                    <label className='text-white mt-3'>Matrícula* : </label>
+                    <label className='text-white my-3'>Matrícula<b style={{color:"#a90c0c"}}>*</b> : </label>
                     <div>
                         <InputGroup className="mb-3" >
                             <Form.Control
@@ -41,7 +41,7 @@ export function Cadastro(){
                         </InputGroup>
                     </div>
 
-                    <label className='text-white mt-3'>Email*: </label>
+                            <label className='text-white my-3'>Email<b style={{ color: "#a90c0c" }}>*</b>: </label>
                     <div>
                         <InputGroup className="mb-3" >
                             <Form.Control
@@ -56,7 +56,7 @@ export function Cadastro(){
 
                     </div>
 
-                    <label className='text-white mt-3'>Senha* : </label>
+                            <label className='text-white my-3'>Senha<b style={{ color: "#a90c0c" }}>*</b> : </label>
                     <div>
                         <InputGroup className="mb-3" >
                             <Form.Control
@@ -69,7 +69,7 @@ export function Cadastro(){
                             />
                         </InputGroup>
                     </div>
-                    <label className='text-white mt-3'>Confirmar senha* : </label>
+                    <label className='text-white my-3'>Confirmar senha<b style={{color:"#a90c0c"}}>*</b> : </label>
                     <div>
                         <InputGroup className="mb-3" >
                             <Form.Control
@@ -83,7 +83,7 @@ export function Cadastro(){
                         </InputGroup>
                     </div>
 
-                    <label className='text-white mt-3'>Sexo: </label>
+                    <label className='text-white my-3'>Sexo: </label>
                     <div>
                         <InputGroup className="mb-3" >
                             <Form.Select aria-label="Default select example"
@@ -98,7 +98,7 @@ export function Cadastro(){
                         </InputGroup>
                     </div>
 
-                    <label className='text-white mt-3'>Data de Nascimento: </label>
+                    <label className='text-white my-3'>Data de Nascimento: </label>
                     <div>
                         <InputGroup className="mb-3" >
                             <Form.Control
@@ -111,7 +111,7 @@ export function Cadastro(){
                         </InputGroup>
                     </div>
 
-                    <label className='text-white mt-3'>Etnia: </label>
+                    <label className='text-white my-3'>Etnia: </label>
                     <div>
                         <InputGroup className="mb-3" >
                             <Form.Select aria-label="Default select example"
@@ -128,7 +128,7 @@ export function Cadastro(){
                         </InputGroup>
                     </div>
 
-                    <label className='text-white mt-3'>Curso: </label>
+                    <label className='text-white my-3'>Curso: </label>
                     <div>
                         <InputGroup className="mb-3" >
                             <Form.Select aria-label="Default select example"
@@ -142,7 +142,7 @@ export function Cadastro(){
                         </InputGroup>
                     </div>
                 
-                    <div style={{ textAlign: 'center', marginTop: '4rem', marginBottom: '5rem' }}>
+                    <div className='text-center my-5'>
                         <button type="submit" style={{ borderRadius: 20, backgroundColor: '#1BB121', borderColor: 'transparent', width: '10rem', height: '3rem', color: 'white' }}>
                             Salvar <img src='src\assets\save.png' width="20" height="20" />
                         </button>

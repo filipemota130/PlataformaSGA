@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import Stack from 'react-bootstrap/Stack';
-import ufalLogo from '../../assets/logoic.svg'
+import ufalLogo from '../../assets/SGM.svg'
 
 export default function Navbar_reduced() {
     const [show, setShow] = useState(false);
@@ -40,8 +40,8 @@ export default function Navbar_reduced() {
                             </Stack>
                         </Modal.Body>
                     </Modal>
-                    <div className='text-white me-3 mt-3 d-flex'>
-                        <img src={ufalLogo} />
+                    <div className='text-white d-flex' style={{ marginTop: "-70px", marginBottom: "-100px", }}>
+                        <img src={ufalLogo} width="300px" height="300px"/>
                     </div>
                 </Container>
             </Navbar>

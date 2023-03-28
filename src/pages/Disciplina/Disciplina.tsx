@@ -8,6 +8,10 @@ import Stack from 'react-bootstrap/esm/Stack';
 
 export function Disciplina() {
     const name = 'Nome da Disciplina (NDD) - COMP666';
+    const professor = {
+        nome: "Professorson",
+        link:"professor"
+    }
     const classification = 9.5;
     const tags = {
         tipo: "Obrigatoria",
@@ -39,6 +43,11 @@ export function Disciplina() {
                             <Card.Title style={{ fontSize: 30, marginRight: 20 }}>{name}</Card.Title>
                             <img src='src\assets\estrela.png' width="25" height="25" />
                             <div style={{ fontSize: 24 }}>&nbsp;&nbsp;{classification}/10</div>
+                        </div>
+                        <div>
+                            <a>
+
+                            </a>
                         </div>
                         <div className="my-3">
                             <Badge bg={tags.tipo == "Obrigatoria" ? "warning" : "secondary"} className="mx-1">{tags.tipo}</Badge>
