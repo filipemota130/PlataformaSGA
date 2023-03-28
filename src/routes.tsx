@@ -3,6 +3,7 @@ import { Default } from "./layouts/Default";
 import { Disciplina } from "./pages/Disciplina/Disciplina";
 import { DisciplinaList } from "./pages/DisciplinaList/DisciplinaList";
 import { Timeline } from "./pages/Timeline";
+import { Aluno } from "./pages/perfil/Aluno"
 
 export const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
     {
         path: 'Disciplina',
         element: <Disciplina/>,
+    },
+    {
+        path: '/profile',
+        element: <Aluno/>,
     }
     
 ])
