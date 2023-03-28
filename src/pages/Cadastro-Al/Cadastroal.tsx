@@ -1,4 +1,3 @@
-import './Cadastroal.css'
 import Nav_reduced from '../../components/Navbar_reduced/Navbar_reduced';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
