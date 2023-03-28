@@ -1,4 +1,3 @@
-
 import Nav_reduced from '../../components/Navbar_reduced/Navbar_reduced';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
@@ -108,10 +107,6 @@ export function CadastroProf() {
                             Salvar <img src='src\assets\save.png' width="20" height="20" />
                         </button>
                     </div>
-
-
-
-
                 </form>
             </div>
 
@@ -120,6 +115,5 @@ export function CadastroProf() {
     );
 
 }
-
 export default CadastroProf;
 

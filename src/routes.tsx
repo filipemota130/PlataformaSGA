@@ -8,6 +8,9 @@ import { Login } from "./pages/Login/Login";
 import { CadastroProf } from "./pages/CadastroProf/CadastroProf";
 import { DisciplinaForm } from "./pages/DisciplinaForm/DisciplinaForm"
 import { Grade } from "./pages/Grade/Grade";
+import { Aluno } from "./pages/perfil/Aluno"
+import { Sobre } from "./pages/Sobre/Sobre"
+import { Cadastro } from "./pages/Cadastro-Al/Cadastroal";
 
 export const router = createBrowserRouter([
     {
@@ -33,12 +36,12 @@ export const router = createBrowserRouter([
         element: <Disciplina/>,
     },
     {
-        path: 'Login',
-        element: <Login/>,
+        path: 'profile',
+        element: <Aluno/>,
     },
     {
-        path: 'CadastroProf',
-        element: <CadastroProf />,
+        path: 'sobre',
+        element: <Sobre/>,
     },
     {
         path: 'DisciplinaForm',
@@ -46,7 +49,10 @@ export const router = createBrowserRouter([
     },
     {
         path: 'Grade',
-        element: <Grade/>,
+        element: <Grade />,
+    },
+    {
+        path: 'cadastro-aluno',
+        element: <Cadastro />,
     }
-
 ])
