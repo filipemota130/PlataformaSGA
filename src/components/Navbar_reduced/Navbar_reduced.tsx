@@ -39,7 +39,7 @@ export default function Navbar_reduced() {
                             </Stack>
                         </Modal.Body>
                     </Modal>
-                    <div className='text-white me-5 mt-3 d-flex'>
+                    <div className='text-white me-3 mt-3 d-flex'>
                         <img src={ufalLogo} />
                     </div>
                 </Container>
