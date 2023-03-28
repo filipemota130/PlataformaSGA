@@ -6,7 +6,6 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 
 export function CadastroProf() {
-
     return (
         <>
             <Nav_reduced></Nav_reduced>
