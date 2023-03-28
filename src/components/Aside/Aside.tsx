@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Aside.css'
 export function Aside() {
+    const check_login = false
     return (
             <aside className="aside-right">
                 <div className="profile m-4">

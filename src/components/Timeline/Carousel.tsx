@@ -1,6 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import image1 from '/src/assets/imagem.png'
 
+import "/src/components/Timeline/Carousel.css"
+
 function UncontrolledExample() {
   const items = [
     {
@@ -23,7 +25,7 @@ function UncontrolledExample() {
     <Carousel className="rounded" style={{ width: "auto" }}>
       {
         items.map(item =>
-          <Carousel.Item style={{ width: "auto", maxHeight: "400px", padding: 0, margin: 0 }}>
+          <Carousel.Item style={{ width: "auto", padding: 0, margin: 0 }}>
             <img
               className="d-block w-100"
               src={item.imagem}

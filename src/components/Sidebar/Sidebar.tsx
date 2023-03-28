@@ -19,7 +19,7 @@ export function Sidebar(){
         <nav className="main-navegation">
           <NavLink to='/'> <House weight="fill"/>Home</NavLink>
           <a href="/disciplinas"><Book/>Disciplinas</a>
-          <a href=""> <UsersThree/>Professores</a>
+          <a href="/professores"> <UsersThree/>Professores</a>
           <a href=""> <Table/>Grade</a>
           <a href="/sobre"> <Info/>Sobre nós</a>
         </nav>       
