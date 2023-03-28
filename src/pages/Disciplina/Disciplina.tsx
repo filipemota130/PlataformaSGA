@@ -44,9 +44,10 @@ export function Disciplina() {
                             <img src='src\assets\estrela.png' width="25" height="25" />
                             <div style={{ fontSize: 24 }}>&nbsp;&nbsp;{classification}/10</div>
                         </div>
-                        <div>
-                            <a>
-
+                        <div className='mt-3 fs-5'>
+                            Professor Responsavel:
+                            <a className="mx-2" href={professor.link}>
+                                {professor.nome}
                             </a>
                         </div>
                         <div className="my-3">
