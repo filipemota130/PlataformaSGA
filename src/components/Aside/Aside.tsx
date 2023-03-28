@@ -3,9 +3,9 @@ import './Aside.css'
 export function Aside() {
     return (
             <aside className="aside-right">
-                <div className="profile">
+                <div className="profile m-4">
                     <div className="notifications"></div>
-                    <Link to="/profile">
+                    <Link to="/profile" >
                     <div className="foto"></div>
                     <h5>Karolaine Lima</h5>
                     </Link>

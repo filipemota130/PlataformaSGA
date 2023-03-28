@@ -1,4 +1,5 @@
 .sidebar{
+    margin-top: -20px;
     padding: 1.5rem 1.25rem;
     display: flex;
     flex-direction: column;
@@ -13,6 +14,7 @@
 }
 
 .main-navegation{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -52,9 +54,9 @@
     top: 65%;
     left: 20%;
 }
-.warnings{
+/* .warnings{
     background: #FC9B18;
     width: 225px;
     height: 225px;
     border-radius: 40px;
-}
+} */

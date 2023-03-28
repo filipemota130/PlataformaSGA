@@ -1,7 +1,7 @@
 import './Aluno.css'
 
 export function Aluno (){
-    const alunos = {
+    const Aluno1 = {
         nome: "Karolaine",
         matricula: 13154,
         email: "kartulle@hotmail.com",

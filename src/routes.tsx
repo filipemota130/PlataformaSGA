@@ -2,17 +2,18 @@ import { createBrowserRouter } from "react-router-dom";
 import { Default } from "./layouts/Default";
 import { Disciplina } from "./pages/Disciplina/Disciplina";
 import { DisciplinaList } from "./pages/DisciplinaList/DisciplinaList";
-import { Timeline } from "./pages/Timeline";
+import { Timeline } from "./pages/Timeline/Timeline";
 import { Aluno } from "./pages/perfil/Aluno"
+import { Sobre } from "./pages/Sobre/Sobre"
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <Default/>,
+        element: <Default />,
         children: [
             {
                 path: '/',
-                element: <Timeline/>
+                element: <Timeline />
             },
         ]
     },
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
     {
         path: '/profile',
         element: <Aluno/>,
+    },
+    {
+        path: '/sobre',
+        element: <Sobre/>,
     }
-    
+
 ])
