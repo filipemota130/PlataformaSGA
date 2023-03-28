@@ -14,7 +14,7 @@ export default function Navbar_reduced() {
             <Navbar className="flex" style={{ backgroundColor: "#24323D", width: "100%" }}>
                 <Container fluid>
                     <nav className='navbar justify-content-start mx-4'>
-                        <Button style={{ backgroundColor: "#ffffff", borderColor: "transparent", width: "auto", height:"auto"}} onClick={() => setShow(true)}>
+                        <Button style={{ backgroundColor: "rgb(12, 94, 167", borderColor: "transparent", width: "auto", height:"auto"}} onClick={() => setShow(true)}>
                             <span style={{ color: "white !important" }} className='navbar-toggler-icon'></span>
                         </Button>
                     </nav>

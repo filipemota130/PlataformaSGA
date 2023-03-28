@@ -5,11 +5,11 @@ import { DisciplinaList } from "./pages/DisciplinaList/DisciplinaList";
 import { ProfessorList } from "./pages/ProfessorList/ProfessorList";
 import { Timeline } from "./pages/Timeline/Timeline";
 import { Login } from "./pages/Login/Login";
+import { SobreNos } from "./pages/SobreNos/SobreNos"
 import { CadastroProf } from "./pages/CadastroProf/CadastroProf";
 import { DisciplinaForm } from "./pages/DisciplinaForm/DisciplinaForm"
 import { Grade } from "./pages/Grade/Grade";
 import { Aluno } from "./pages/perfil/Aluno"
-import { Sobre } from "./pages/Sobre/Sobre"
 import { Cadastro } from "./pages/Cadastro-Al/Cadastroal";
 
 export const router = createBrowserRouter([
@@ -33,19 +33,27 @@ export const router = createBrowserRouter([
     },
     {
         path: 'Disciplina',
-        element: <Disciplina/>,
+        element: <Disciplina />,
+    },
+    {
+        path: 'Login',
+        element: <Login />,
+    },
+    {
+        path: 'SobreNos',
+        element: <SobreNos />,
     },
     {
         path: 'profile',
         element: <Aluno/>,
     },
     {
-        path: 'sobre',
-        element: <Sobre/>,
-    },
-    {
         path: 'DisciplinaForm',
         element: <DisciplinaForm />,
+    },
+    {
+        path: 'CadastroProf',
+        element: <CadastroProf />,
     },
     {
         path: 'Grade',
