@@ -7,18 +7,18 @@ function UncontrolledExample() {
   const items = [
     {
       imagem: image1,
-      title: "Aaaaaaa",
-      desc:"asdhausjhdiasuhduiashd",
+      title: "Card1",
+      desc:"Noticias sobre disciplina",
     },
     {
       imagem: image1,
-      title: "BBBBBB",
-      desc: "cdcccdcdcdcdcdcdcd",
+      title: "Card2",
+      desc: "Noticias sobre disciplina",
     },
     {
       imagem: image1,
-      title: "CCCCCCC",
-      desc: "ahsydhasyuhdauysdhua",
+      title: "Card3",
+      desc: "Noticias sobre disciplina",
     },
   ]
   return (
