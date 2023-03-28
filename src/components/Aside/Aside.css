@@ -23,8 +23,7 @@
 .container-aside{
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-    width: 100%;
-    max-width: 400px;
+    width: auto;
     height: 50rem;
-    background: var(--cor-padrao);
+    background-color: var(--cor-padrao);
 }

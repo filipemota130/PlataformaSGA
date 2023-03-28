@@ -22,7 +22,7 @@ function UncontrolledExample() {
     },
   ]
   return (
-    <Carousel className="rounded" style={{ width: "auto" }}>
+    <Carousel className="rounded" style={{maxWidth:"96%" }}>
       {
         items.map(item =>
           <Carousel.Item style={{ width: "auto", padding: 0, margin: 0 }}>
