@@ -16,13 +16,14 @@ export function DisciplinaForm() {
         <>
             <Nav_reduced></Nav_reduced>
             <h1 style={{ fontSize: 30, color: 'white', textAlign: "center", marginBottom: 100 }}>Cadastro/Edição de Disciplina</h1>
-            <div className='d-flex justify-content-center mx-5' style={{ width: '90%' }}>
+            <div className="col-md-6 offset-md-3">
                 <Form action='' style={{ width: '100%' }}>
-                    <label className='text-white my-3'>Código:</label>
+                    <label className='text-white'>Código:</label>
                     <div style={{ width: 'auto' }}>
                         <InputGroup className="mb-3" >
                             <Form.Control
                                 type='text'
+                                className='input mt-2'
                                 placeholder="Ex: COMP666"
                                 aria-label="Código"
                                 aria-describedby="basic-addon1"
@@ -36,6 +37,7 @@ export function DisciplinaForm() {
                         <InputGroup className="mb-3" >
                             <Form.Control
                                 type='text'
+                                className='input mt-2'
                                 placeholder="Ex: Programação 3"
                                 aria-label="Nome"
                                 aria-describedby="basic-addon1"
@@ -57,7 +59,7 @@ export function DisciplinaForm() {
                         <InputGroup className="mb-3" >
                             <Form.Control
                                 type='number'
-                                className='text-white'
+                                className='input mt-2'
                                 placeholder="Ex: 72"
                                 aria-label="Carga"
                                 aria-describedby="basic-addon1"
@@ -71,8 +73,8 @@ export function DisciplinaForm() {
                         <Form.Group controlId="formFile" className="mb-3" >
                             <Form.Control
                                 type="file"
-                                className='input text-white'
-                                style={{ backgroundColor: '#33464D', borderColor: 'transparent', borderRadius: 20, width: "30%" }} />
+                                className='input text-white p-2'
+                                style={{ backgroundColor: '#33464D', borderColor: 'transparent', borderRadius: 20, width: "50%" }} />
                         </Form.Group>
                     </div>
                     <label className='text-white  mt-3 mb-2'>Banner da disciplina: </label>
@@ -80,17 +82,22 @@ export function DisciplinaForm() {
                         <Form.Group controlId="formFile" className="mb-3" >
                             <Form.Control
                                 type="file"
-                                className='input text-white'
-                                style={{ backgroundColor: '#33464D', borderColor: 'transparent', borderRadius: 20, width: "30%" }} />
+                                className='input text-white p-2'
+                                style={{ backgroundColor: '#33464D', borderColor: 'transparent', borderRadius: 20, width: "50%" }} />
                         </Form.Group>
                     </div>
                     <label className='text-white mt-3 mb-2'>Pré-requisitos: </label>
                     <div className='text-white mt-3 ml-5'>
                         <ul>
                             {
-                                disciplinas.map((item) =>
+                                disciplinas.map((item,i) =>
                                     <li>{item}
-                                        <button type="button" className="btn btn-default btn-sm" style={{ backgroundColor: 'transparent', marginBottom: '10px' }}>
+                                        <button type="button" onClick={
+                                            () => {
+                                                const new_horario = horarios.splice(i)
+                                                sethorarios(new_horario);
+                                            }
+                                        } className="btn btn-default btn-sm" style={{ backgroundColor: 'transparent', marginBottom: '10px' }}>
                                             <img src='src\assets\trash.png' width="20" height="20" />
                                         </button>
                                     </li>
@@ -103,6 +110,7 @@ export function DisciplinaForm() {
                             <Form.Control
                                 type='text'
                                 placeholder="Ex: Disciplina 1"
+                                className='input mt-2'
                                 aria-label="Recipient's username"
                                 aria-describedby="basic-addon2"
                                 value={disciplinaValue}
@@ -147,6 +155,7 @@ export function DisciplinaForm() {
                                 placeholder="Ex: Qua (70:30 - 9:20)"
                                 aria-label="Recipient's username"
                                 value={horarioValue}
+                                className='input mt-2'
                                 onChange={(event) => sethorarioValue(event.target.value)}
                                 aria-describedby="basic-addon2"
                                 style={{ backgroundColor: '#33464D', borderColor: 'transparent', borderRadius: 20, color: 'white' }}
