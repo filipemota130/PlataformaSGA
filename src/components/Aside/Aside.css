@@ -1,14 +1,12 @@
 
 .profile{
-    margin: 30px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     color: #fff;
-    font-size: 1rem;
 }
 .notifications{
-    background: #0990F9;
+    background: var(--cor-padrao);
     width: 30px;
     height: 30px;
     border-radius: 9999px;
@@ -20,12 +18,14 @@
     border-radius: 9999px;
 }
 .aside-right{
-    position: fixed;
+    position: relative;
     right: 0px;
 }
 .container-aside{
     border-top-left-radius: 40px;
-    width: 25vw;
-    height: 85vh;
+    border-bottom-left-radius: 40px;
+    width: 100%;
+    max-width: 400px;
+    height: 50rem;
     background: var(--cor-padrao);
 }

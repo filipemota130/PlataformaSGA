@@ -5,29 +5,29 @@ export function Aside() {
     return (
         <aside className="aside-right">
             {
-                check_login == false ? 
+                check_login == false ?
                     (
                         <div>
                             <a href="Login">
                                 <Button>
                                     Entrar
                                 </Button>
-                            </a>   
+                            </a>
                             <a>
                                 <Button>
                                     Cadastre-se
                                 </Button>
-                            </a>                         
+                            </a>
                         </div>
-                    ) : 
+                    ) :
                     (
-                        <div className="profile">
+                        <div className="profile m-4">
                             <div className="notifications"></div>
                             <div className="foto"></div>
-                            <h3>Usuário</h3>
+                            <h5>Usuário</h5>
                         </div>
                     )
-                }
+            }
 
             <div className="container-aside"></div>
         </aside>
