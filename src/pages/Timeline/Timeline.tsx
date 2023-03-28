@@ -88,7 +88,7 @@ export function Timeline() {
           <UncontrolledExample />
         </div>
       </div>
-      <div className="cards m-4" style={{ maxHeight: "600px", scrollBehavior: "smooth", overflowY: "scroll" }}>
+      <div className="cards m-5" style={{ maxHeight: "600px", scrollBehavior: "smooth", overflowY: "scroll" }}>
         <div className='text-white fs-2 my-5'>Disciplinas mais bem avaliadas</div>
         <CardGroup style={{ display: "flex" }}>
           {
