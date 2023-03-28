@@ -19,8 +19,6 @@
 .input-container svg{
     width: 1.2rem;
     height: 1.2rem;
-    position: absolute;
-    margin-left: 2vw;
-    margin-top: 4rem;
+    position: relative;
     color: #fff;
 }

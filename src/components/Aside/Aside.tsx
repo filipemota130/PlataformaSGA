@@ -5,12 +5,12 @@ export function Aside() {
     return (
             <aside className="aside-right">
                 <div className="profile m-4">
-                    <div className="notifications"></div>
                     <Link to="/profile" >
-                    <div className="foto"></div>
-                    <h5>Karolaine Lima</h5>
+                    <div className="foto me-3"></div>
                     </Link>
-                </div>
+                <a href='/profile'><h5>Usuário</h5></a>
+            </div>
+            
                 <div className="container-aside"></div>
             </aside>
     )

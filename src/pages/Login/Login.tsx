@@ -24,7 +24,7 @@ export function Login() {
                                 <img src="..\src\assets\account_circle.png" width="35" height="35" />
                             </InputGroup.Text>
                             <Form.Control className="fundo2 border-0"
-                                style={{ borderEndEndRadius: 25, borderStartEndRadius: 25 }}
+                                style={{ borderEndEndRadius: 25, borderStartEndRadius: 25, backgroundColor: '#33464D' }}
                                 aria-label="Small"
                                 aria-describedby="inputGroup-sizing-sm"
                                 type="email"
@@ -40,7 +40,7 @@ export function Login() {
                                 <img src="..\src\assets\lock.png" width="35" height="30" />
                             </InputGroup.Text>
                             <Form.Control className="fundo2 border-0"
-                                style={{ borderEndEndRadius: 25, borderStartEndRadius: 25 }}
+                                style={{ borderEndEndRadius: 25, borderStartEndRadius: 25, backgroundColor: '#33464D' }}
                                 aria-label="Small"
                                 aria-describedby="inputGroup-sizing-sm"
                                 type="password"
@@ -58,10 +58,9 @@ export function Login() {
                             style={{ marginTop: "40px", height: "50px", width: "225px", borderRadius: 25 }}>
                             Confirmar
                         </Button>
-
                     </div>
                     <a className="d-flex justify-content-center text-white"
-                        href="..\src\pages\Cadastro_Aluno\Cadastro_aluno"
+                        href="cadastro-aluno"
                         style={{ textDecoration: "none" }}>
                         Ainda não tem conta? Crie aqui.
                     </a>
