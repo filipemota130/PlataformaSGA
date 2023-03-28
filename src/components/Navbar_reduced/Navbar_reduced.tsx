@@ -34,9 +34,8 @@ export default function Navbar_reduced() {
                         <Modal.Body className='flex fundo1 text-white'>
                             <Stack className='mb-3 fs-5' gap={3}>
                                 <a href='/' style={{ textDecoration: "none" }}>Inicio</a>
-                                <a href='/disciplina' style={{ textDecoration: "none" }} >Disciplinas</a>
-                                <a>Professores</a>
-                                <a>Sobre nós</a>
+                                <a href='/disciplinas' style={{ textDecoration: "none" }} >Disciplinas</a>
+                                <a href='/professores' style={{ textDecoration: "none" }}>Professores</a>
                             </Stack>
                         </Modal.Body>
                     </Modal>
