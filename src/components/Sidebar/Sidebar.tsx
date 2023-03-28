@@ -14,7 +14,7 @@ export function Sidebar(){
           <a href="/disciplinas"><Book/>Disciplinas</a>
           <a href="/professores"> <UsersThree/>Professores</a>
           <a href=""> <Table/>Grade</a>
-          <a href=""> <Info/>Sobre nós</a>
+          <a href="/sobrenos"> <Info/>Sobre nós</a>
         </nav>       
       </aside>
     </>

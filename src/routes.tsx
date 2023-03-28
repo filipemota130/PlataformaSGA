@@ -5,6 +5,7 @@ import { DisciplinaList } from "./pages/DisciplinaList/DisciplinaList";
 import { ProfessorList } from "./pages/ProfessorList/ProfessorList";
 import { Timeline } from "./pages/Timeline/Timeline";
 import { Login } from "./pages/Login/Login";
+import { SobreNos } from "./pages/SobreNos/SobreNos"
 
 export const router = createBrowserRouter([
     {
@@ -27,10 +28,14 @@ export const router = createBrowserRouter([
     },
     {
         path: 'Disciplina',
-        element: <Disciplina/>,
+        element: <Disciplina />,
     },
     {
         path: 'Login',
-        element: <Login/>,
+        element: <Login />,
+    },
+    {
+        path: 'SobreNos',
+        element: <SobreNos />,
     },
 ])
