@@ -33,8 +33,12 @@ export function DisciplinaList() {
             <Nav_reduced />
             <div className='d-flex justify-content-center'>
                 <div>
-                    <h1 className='text-white fs-1 text-center mt-4'>Disciplinas</h1>
-                    <Header></Header>
+                    <div>
+                        <h1 className='text-white fs-1 text-center mt-4'>Disciplinas</h1>
+                        <div className='d-flex justify-content-center'>
+                            <Header></Header>
+                        </div>
+                    </div>
                     <Container style={{ width: 'auto', maxWidth: "55rem" }} className='mt-5 text-white'>
                         <ListGroup>
                             {
@@ -43,12 +47,11 @@ export function DisciplinaList() {
                                         <Card.Body className='d-flex'>
                                             <div className='m-4'><img src="src\assets\rede-global.png" width="100" height="100" /></div>
                                             <div className="justify-content-end ms-4">
-                                                <div className='fundo1 rounded p-3 left mb-2' style={{ width: "100%" }}>
+                                                <div className='fundo1 pt-3 pb-1 px-3 left mb-2' style={{ width: "100%", borderRadius: 20}}>
                                                     <Card.Title>{disciplina.name}<img src='src\assets\estrela.png' className="ms-5" width="25" height="25" /> {disciplina.nota}/10</Card.Title>
-                                                    
                                                 </div>
-                                                <Card.Title>
-                                                    Professor: {disciplina.professor}
+                                                <Card.Title className='fs-5'>
+                                                    <b>Professor:  </b>{disciplina.professor}
                                                 </Card.Title>
                                                 <a href={disciplina.link}><Button className="mt-3" variant="primary">Ver mais</Button></a>
                                             </div>
