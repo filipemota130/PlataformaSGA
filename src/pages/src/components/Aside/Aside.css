@@ -1,0 +1,31 @@
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.notifications{
+    background: var(--cor-padrao);
+    width: 30px;
+    height: 30px;
+    border-radius: 9999px;
+}
+.foto{
+    width: 60px;
+    height: 60px;
+    background: #0990F9;
+    border-radius: 9999px;
+}
+.aside-right{
+    position: relative;
+    right: 0px;
+}
+.container-aside{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 100%;
+    max-width: 400px;
+    height: 50rem;
+    background: var(--cor-padrao);
+}
