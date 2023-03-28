@@ -11,6 +11,7 @@ import { DisciplinaForm } from "./pages/DisciplinaForm/DisciplinaForm"
 import { Grade } from "./pages/Grade/Grade";
 import { Aluno } from "./pages/perfil/Aluno"
 import { Cadastro } from "./pages/Cadastro-Al/Cadastroal";
+import { Professor } from "./pages/Professor/professor";
 
 export const router = createBrowserRouter([
     {
@@ -62,5 +63,9 @@ export const router = createBrowserRouter([
     {
         path: 'cadastro-aluno',
         element: <Cadastro />,
+    },
+    {
+        path: 'Professor',
+        element: <Professor />
     }
 ])
