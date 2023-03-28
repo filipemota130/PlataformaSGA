@@ -17,6 +17,7 @@ export function Timeline() {
   const best_stars = [
     {
       name: "Calculos Loucos",
+      link:"disciplina",
       imgURL: image1,
       classification: 9.4,
       prof: "Professorson",
@@ -26,6 +27,7 @@ export function Timeline() {
     },
     {
       name: "Calculos Loucos",
+      link: "disciplina",
       imgURL: image1,
       classification: 9.4,
       prof: "Professorson",
@@ -35,6 +37,7 @@ export function Timeline() {
     },
     {
       name: "Calculos Loucos",
+      link: "disciplina",
       imgURL: image1,
       classification: 9.4,
       prof: "Professorson",
@@ -46,6 +49,7 @@ export function Timeline() {
   const more_acess = [
           {
       name: "Calculos Loucos",
+      link: "disciplina",
       imgURL: image1,
       classification: 9.4,
       prof: "Professorson",
@@ -55,6 +59,7 @@ export function Timeline() {
     },
     {
       name: "Calculos Loucos",
+      link: "disciplina",
       imgURL: image1,
       classification: 9.4,
       prof: "Professorson",
@@ -64,6 +69,7 @@ export function Timeline() {
     },
     {
       name: "Calculos Loucos",
+      link: "disciplina",
       imgURL: image1,
       classification: 9.4,
       prof: "Professorson",
@@ -87,10 +93,10 @@ export function Timeline() {
         <CardGroup style={{ display: "flex" }}>
           {
             best_stars.map((item) =>
-              <Card className="mx-3 rounded border-0 fundo2 text-white">
-                <Card.Img variant="top" className="border-0 rounded" style={{ backgroundColor: item.cor }} width="auto" height="150px" />
+              <Card className="mx-3 rounded fundo2 text-white">
+                <Card.Header className="border-0 rounded" style={{ backgroundColor: item.cor, width:"auto", height:"150px" }} />
                 <Card.Title className='mx-3 mt-2'>
-                  <div style={{ fontSize: 20 }}>{item.name}<img src='src\assets\estrela.png' width="25" height="25" className='ms-5' />&nbsp;&nbsp;{item.classification}/10</div>
+                  <div style={{ fontSize: 20 }}><a href={item.link} style={{ textDecoration: "none", marginRight: "50px" }}>{item.name}</a><img src='src\assets\estrela.png' width="25" height="25" className='ms-5' />&nbsp;&nbsp;{item.classification}/10</div>
                 </Card.Title>
                 <Card.Footer className="text-white border-0">
                   {
@@ -114,9 +120,9 @@ export function Timeline() {
           {
             more_acess.map((item) =>
               <Card className="mx-3 rounded border-0 fundo2 text-white">
-                <Card.Img variant="top" className="border-0 rounded" style={{ backgroundColor: item.cor }} width="auto" height="150px" />
+                <Card.Header className="border-0 rounded" style={{ backgroundColor: item.cor, width: "auto", height: "150px" }} />
                 <Card.Title className='mx-3 mt-2'>
-                  <div style={{ fontSize: 20 }}>{item.name}<img src='src\assets\estrela.png' width="25" height="25" className='ms-5' />&nbsp;&nbsp;{item.classification}/10</div>
+                  <div style={{ fontSize: 20 }}><a href={item.link} style={{ textDecoration: "none", marginRight: "50px" }}>{item.name}</a><img src='src\assets\estrela.png' width="25" height="25" className='ms-5'/>&nbsp;&nbsp;{item.classification}/10</div>
                 </Card.Title>
                 <Card.Footer className="text-white border-0">
                   {

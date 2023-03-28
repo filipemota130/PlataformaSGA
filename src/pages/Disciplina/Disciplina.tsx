@@ -49,9 +49,25 @@ export function Disciplina() {
                             <Stack gap={3}>
                                 <ListGroup>
                                     <ListGroup.Item className='fundo2 text-white'><b>Carga Horária: </b>{properties.carga}hrs</ListGroup.Item>
-                                    <ListGroup.Item className='fundo2 text-white'><b>Pre-requisitos: </b>{properties.pre_req.map((req) => req + ", ")}</ListGroup.Item>
-                                    <ListGroup.Item className='fundo2 text-white'><b>Horarios: </b>{properties.Horarios.map((req) => req + ", ")}</ListGroup.Item>
-                                    <ListGroup.Item className='fundo2 text-white'><b>É pré-requisito de: </b>{properties.req_de.map((req) => req + ", ")}</ListGroup.Item>
+                                    <ListGroup.Item className='fundo2 text-white'><b>Pre-requisitos: </b>{properties.pre_req.map((req,i) => {
+                                        return <span>
+                                            {req} {i < properties.pre_req.length-1 ? ", " : ";"}
+                                        </span>
+                                        }    
+                                    )
+                                    }</ListGroup.Item>
+                                    <ListGroup.Item className='fundo2 text-white'><b>Horarios: </b>{properties.Horarios.map((req, i) => {
+                                        return <span>
+                                            {req} {i < properties.Horarios.length-1 ? ", " : ";"}
+                                        </span>
+                                    }
+                                    )}</ListGroup.Item>
+                                    <ListGroup.Item className='fundo2 text-white'><b>É pré-requisito de: </b>{properties.req_de.map((req, i) => {
+                                        return <span>
+                                            {req} {i < properties.req_de.length-1  ? ", " : ";"}
+                                        </span>
+                                    }
+                                    )}</ListGroup.Item>
                                 </ListGroup>
                                 <ListGroup>
                                     {
